@@ -109,7 +109,3 @@ Enter an input string: quit
 - Server log: `karnati.10-project3-server.log`
 
 Logs include connection info, commands sent/received, and server responses.
-
-## License
-
-This project is licensed under the MIT License.
