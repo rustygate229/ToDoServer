@@ -1,0 +1,81 @@
+2025-04-12 11:16:13,381: INFO 3461 Project3 Server starting
+2025-04-12 11:16:13,385: INFO Server listening on port 7188
+2025-04-12 11:16:20,353: INFO Connection accepted from 127.0.0.1
+2025-04-12 11:16:36,195: INFO Server request: b'{"command": "REMOVE", "parameter": "item"}'
+2025-04-12 11:16:36,196: INFO Server response: {"response": "ERROR", "parameter": "No list created. Use CREATE first."}
+2025-04-12 11:16:41,574: INFO Server request: b'{"command": "CREATE", "parameter": "todo"}'
+2025-04-12 11:16:41,575: INFO Server response: {"response": "CREATED", "parameter": "Created a TODO list with name todo"}
+2025-04-12 11:16:50,252: INFO Server request: b'{"command": "CREATE", "parameter": "another"}'
+2025-04-12 11:16:50,252: INFO Server response: {"response": "WARNING", "parameter": "List already exists: todo"}
+2025-04-12 11:16:54,636: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:16:54,636: INFO Server response: {"response": "SHOW", "parameter": "(List is empty)"}
+2025-04-12 11:17:03,550: INFO Server request: b'{"command": "ADD", "parameter": "study for final"}'
+2025-04-12 11:17:03,551: INFO Server response: {"response": "ADDED", "parameter": "Added - study for final - to TODO list"}
+2025-04-12 11:17:08,142: INFO Server request: b'{"command": "ADD", "parameter": "take final"}'
+2025-04-12 11:17:08,142: INFO Server response: {"response": "ADDED", "parameter": "Added - take final - to TODO list"}
+2025-04-12 11:17:13,478: INFO Server request: b'{"command": "ADD", "parameter": "party"}'
+2025-04-12 11:17:13,478: INFO Server response: {"response": "ADDED", "parameter": "Added - party - to TODO list"}
+2025-04-12 11:17:18,257: INFO Server request: b'{"command": "ADD", "parameter": "get grades"}'
+2025-04-12 11:17:18,258: INFO Server response: {"response": "ADDED", "parameter": "Added - get grades - to TODO list"}
+2025-04-12 11:17:21,178: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:17:21,178: INFO Server response: {"response": "SHOW", "parameter": "study for final,take final,party,get grades"}
+2025-04-12 11:17:25,887: INFO Server request: b'{"command": "REMOVE", "parameter": "party"}'
+2025-04-12 11:17:25,887: INFO Server response: {"response": "REMOVED", "parameter": "Removed element - party - from TODO list"}
+2025-04-12 11:17:29,933: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:17:29,933: INFO Server response: {"response": "SHOW", "parameter": "study for final,take final,get grades"}
+2025-04-12 11:17:38,075: INFO Server request: b'{"command": "ADD", "parameter": "resolve to study harder"}'
+2025-04-12 11:17:38,075: INFO Server response: {"response": "ADDED", "parameter": "Added - resolve to study harder - to TODO list"}
+2025-04-12 11:17:43,817: INFO Server request: b'{"command": "REMOVE", "parameter": "study for final"}'
+2025-04-12 11:17:43,818: INFO Server response: {"response": "REMOVED", "parameter": "Removed element - study for final - from TODO list"}
+2025-04-12 11:17:46,403: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:17:46,404: INFO Server response: {"response": "SHOW", "parameter": "take final,get grades,resolve to study harder"}
+2025-04-12 11:17:52,001: INFO Server request: b'{"command": "QUIT", "parameter": ""}'
+2025-04-12 11:17:52,004: INFO Server response: {"response": "QUIT", "parameter": "Server shutting down"}
+2025-04-12 11:17:52,005: INFO Shutting down...
+2025-04-12 11:18:53,904: INFO 3461 Project3 Server starting
+2025-04-12 11:18:53,906: INFO Restored list 'todo' from previous session.
+2025-04-12 11:18:53,906: INFO Server listening on port 7188
+2025-04-12 11:18:57,376: INFO Connection accepted from 127.0.0.1
+2025-04-12 11:19:04,710: INFO Server request: b'{"command": "CREATE", "parameter": "mylist"}'
+2025-04-12 11:19:04,710: INFO Server response: {"response": "WARNING", "parameter": "List already exists: todo"}
+2025-04-12 11:19:09,358: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:19:09,358: INFO Server response: {"response": "SHOW", "parameter": "take final,get grades,resolve to study harder"}
+2025-04-12 11:19:14,730: INFO Server request: b'{"command": "REMOVE", "parameter": "take final"}'
+2025-04-12 11:19:14,731: INFO Server response: {"response": "REMOVED", "parameter": "Removed element - take final - from TODO list"}
+2025-04-12 11:19:17,444: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:19:17,445: INFO Server response: {"response": "SHOW", "parameter": "get grades,resolve to study harder"}
+2025-04-12 11:19:26,914: INFO Server request: b'{"command": "DELETE", "parameter": "mylist"}'
+2025-04-12 11:19:26,915: INFO Server response: {"response": "WARNING", "parameter": "No such list to delete: mylist"}
+2025-04-12 11:19:31,525: INFO Server request: b'{"command": "DELETE", "parameter": "todo"}'
+2025-04-12 11:19:31,526: INFO Server response: {"response": "DELETED", "parameter": "Deleted TODO list todo"}
+2025-04-12 11:19:39,764: INFO Server request: b'{"command": "ADD", "parameter": "item"}'
+2025-04-12 11:19:39,764: INFO Server response: {"response": "ERROR", "parameter": "No list created. Use CREATE first."}
+2025-04-12 11:19:47,549: INFO Server request: b'{"command": "CREATE", "parameter": "StoryOutline"}'
+2025-04-12 11:19:47,549: INFO Server response: {"response": "CREATED", "parameter": "Created a TODO list with name StoryOutline"}
+2025-04-12 11:19:56,581: INFO Server request: b'{"command": "ADD", "parameter": "Boy meets girl"}'
+2025-04-12 11:19:56,581: INFO Server response: {"response": "ADDED", "parameter": "Added - Boy meets girl - to TODO list"}
+2025-04-12 11:20:06,671: INFO Server request: b'{"command": "ADD", "parameter": "Boy and girl fall in love"}'
+2025-04-12 11:20:06,672: INFO Server response: {"response": "ADDED", "parameter": "Added - Boy and girl fall in love - to TODO list"}
+2025-04-12 11:20:12,267: INFO Server request: b'{"command": "ADD", "parameter": "Earth explodes"}'
+2025-04-12 11:20:12,268: INFO Server response: {"response": "ADDED", "parameter": "Added - Earth explodes - to TODO list"}
+2025-04-12 11:20:15,433: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:20:15,433: INFO Server response: {"response": "SHOW", "parameter": "Boy meets girl,Boy and girl fall in love,Earth explodes"}
+2025-04-12 11:20:20,923: INFO Server request: b'{"command": "ADD", "parameter": "The end"}'
+2025-04-12 11:20:20,923: INFO Server response: {"response": "ADDED", "parameter": "Added - The end - to TODO list"}
+2025-04-12 11:20:23,644: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:20:23,644: INFO Server response: {"response": "SHOW", "parameter": "Boy meets girl,Boy and girl fall in love,Earth explodes,The end"}
+2025-04-12 11:20:31,118: INFO Server request: b'{"command": "REMOVE", "parameter": "earth explodes"}'
+2025-04-12 11:20:31,118: INFO Server response: {"response": "WARNING", "parameter": "Item not found: earth explodes"}
+2025-04-12 11:20:33,381: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:20:33,381: INFO Server response: {"response": "SHOW", "parameter": "Boy meets girl,Boy and girl fall in love,Earth explodes,The end"}
+2025-04-12 11:20:40,035: INFO Server request: b'{"command": "REMOVE", "parameter": "Earth explodes"}'
+2025-04-12 11:20:40,035: INFO Server response: {"response": "REMOVED", "parameter": "Removed element - Earth explodes - from TODO list"}
+2025-04-12 11:20:43,366: INFO Server request: b'{"command": "SHOW", "parameter": ""}'
+2025-04-12 11:20:43,366: INFO Server response: {"response": "SHOW", "parameter": "Boy meets girl,Boy and girl fall in love,The end"}
+2025-04-12 11:20:50,106: INFO Server request: b'{"command": "DELETE", "parameter": "storyoutline"}'
+2025-04-12 11:20:50,106: INFO Server response: {"response": "WARNING", "parameter": "No such list to delete: storyoutline"}
+2025-04-12 11:20:58,009: INFO Server request: b'{"command": "DELETE", "parameter": "StoryOutline"}'
+2025-04-12 11:20:58,010: INFO Server response: {"response": "DELETED", "parameter": "Deleted TODO list StoryOutline"}
+2025-04-12 11:21:02,192: INFO Server request: b'{"command": "QUIT", "parameter": ""}'
+2025-04-12 11:21:02,193: INFO Server response: {"response": "QUIT", "parameter": "Server shutting down"}
+2025-04-12 11:21:02,193: INFO Shutting down...
